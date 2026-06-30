@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BASORIA Menu - Premium Indonesian Meatball Restaurant. Explore our delicious bakso varieties.">
+    <title>Menu - BASORIA Premium Indonesian Meatball</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">BASORIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content text-center fade-in">
+                <h1 class="page-title">Our Menu</h1>
+                <p class="page-subtitle">Discover our premium bakso collection</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Search and Filter -->
+            <div class="menu-controls fade-in">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="search-bar">
+                            <i class="bi bi-search"></i>
+                            <input type="text" id="menuSearch" placeholder="Search menu..." class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="category-filters" id="categoryFilters">
+                            <button class="category-filter active" data-category="all">All</button>
+                            <button class="category-filter" data-category="bakso">Bakso</button>
+                            <button class="category-filter" data-category="topping">Topping</button>
+                            <button class="category-filter" data-category="minuman">Minuman</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="menu-empty-state d-none" id="menuEmptyState">
+                <i class="bi bi-search"></i>
+                <p>No items found matching your search.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Section -->
+    <section class="menu-special-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in-left">
+                    <div class="special-image-wrapper">
+                        <img src="https://images.pexels.com/photos/7617590/pexels-photo-7617590.jpeg?auto=compress&cs=tinysrgb&w=800" alt="BASORIA Special Bakso" class="img-fluid rounded-4">
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-right">
+                    <div class="special-content">
+                        <span class="section-label">Chef's Special</span>
+                        <h2 class="section-title">Paket Keluarga</h2>
+                        <p class="special-text">
+                            Our signature family package designed for sharing. Includes a variety of our best bakso,
+                            complete with noodles, vegetables, and our secret sauce recipe.
+                        </p>
+                        <ul class="special-includes">
+                            <li><i class="bi bi-check-circle-fill"></i> 20 Premium Bakso</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Yellow & White Noodles</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Fresh Vegetables</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Signature Soup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 3 Special Sauces</li>
+                        </ul>
+                        <div class="special-price">
+                            <span class="price-amount">Rp 150.000</span>
+                            <span class="price-note">Serves 4-5 people</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Paket%20Keluarga" class="btn btn-primary-custom mt-3" target="_blank">
+                            <i class="bi bi-whatsapp me-2"></i>Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center fade-in">
+                <h2 class="cta-title">Can't Decide? Let Us Help!</h2>
+                <p class="cta-text">Contact us directly and our team will help you choose the perfect meal.</p>
+                <a href="contact.html" class="btn btn-outline-custom">
+                    <i class="bi bi-chat-dots me-2"></i>Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <span class="brand-text">BASORIA</span>
+                        <p class="footer-tagline">Rasa Juara di Setiap Mangkok</p>
+                    </div>
+                    <p class="footer-description">
+                        Premium Indonesian meatball restaurant serving authentic recipes since 2009.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Jl. Raya Sukabumi No. 123, Jakarta Selatan</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <span>hello@basoria.id</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Opening Hours</h5>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Monday - Friday</span>
+                            <span>10:00 - 22:00</span>
+                        </li>
+                        <li>
+                            <span>Saturday - Sunday</span>
+                            <span>09:00 - 23:00</span>
+                        </li>
+                    </ul>
+                    <div class="footer-social mt-4">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/basoria.id" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/basoria.id" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; 2024 BASORIA. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="made-with">Crafted with <i class="bi bi-heart-fill text-accent"></i> in Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

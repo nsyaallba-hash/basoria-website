@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BASORIA - Premium Indonesian Meatball Restaurant. Rasa Juara di Setiap Mangkok.">
+    <title>BASORIA - Premium Indonesian Meatball Restaurant</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">BASORIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 fade-in">
+                    <h1 class="hero-title">BASORIA</h1>
+                    <p class="hero-tagline">Rasa Juara di Setiap Mangkok</p>
+                    <div class="hero-buttons mt-5">
+                        <a href="menu.html" class="btn btn-primary-custom me-3">
+                            <i class="bi bi-book me-2"></i>View Menu
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-custom">
+                            <i class="bi bi-geo-alt me-2"></i>Find Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about-preview" class="scroll-down">
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview-section" id="about-preview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-in-left">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.pexels.com/photos/7617590/pexels-photo-7617590.jpeg?auto=compress&cs=tinysrgb&w=800" alt="BASORIA Restaurant Interior" class="about-preview-image">
+                        <div class="experience-badge">
+                            <span class="years">15+</span>
+                            <span class="text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-right">
+                    <div class="about-content">
+                        <span class="section-label">Our Story</span>
+                        <h2 class="section-title">Authentic Taste Since 2009</h2>
+                        <p class="about-text">
+                            BASORIA was born from a passion for creating the perfect Indonesian meatball experience.
+                            Our recipes have been passed down through generations, refined with premium ingredients
+                            and meticulous preparation to deliver unmatched flavor in every bowl.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Premium Quality Ingredients</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Traditional Family Recipe</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Fresh Daily Preparation</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary-custom mt-4">
+                            Learn More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section class="featured-menu-section" id="featured-menu">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <span class="section-label">Our Specialties</span>
+                <h2 class="section-title">Featured Menu</h2>
+                <p class="section-subtitle">Discover our most loved creations</p>
+            </div>
+            <div class="row g-4" id="featured-menu-grid">
+                <!-- Featured items will be populated by JavaScript -->
+            </div>
+            <div class="text-center mt-5 fade-in">
+                <a href="menu.html" class="btn btn-primary-custom">
+                    View Full Menu <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-4 mb-md-0 fade-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-suffix">+</span>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0 fade-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50000">0</span>
+                        <span class="stat-suffix">+</span>
+                        <p class="stat-label">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 fade-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="25">0</span>
+                        <span class="stat-suffix">+</span>
+                        <p class="stat-label">Menu Variants</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 fade-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-suffix"></span>
+                        <p class="stat-label">Branches</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Bakso terenak yang pernah saya coba! Kuahnya gurih sempurna dan baksonya kenyal. Pasti balik lagi!"</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Ahmad Rizky</span>
+                            <span class="author-title">Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Tempat favorit keluargakami. Porsi besar, harga terjangkau, dan rasanya konsisten enak setiap kali."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Sari Dewi</span>
+                            <span class="author-title">Loyal Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Bakso Mercon-nya juara banget! Pedesnya pas, bumbu meresap sampai ke dalam. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Budi Santoso</span>
+                            <span class="author-title">Spicy Food Lover</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center fade-in">
+                <h2 class="cta-title">Ready to Taste the Champion?</h2>
+                <p class="cta-text">Visit us today and experience the authentic Indonesian meatball that has captured the hearts of thousands.</p>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="btn btn-primary-custom me-3">
+                        <i class="bi bi-book me-2"></i>Explore Menu
+                    </a>
+                    <a href="https://wa.me/6281234567890" class="btn btn-whatsapp" target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <span class="brand-text">BASORIA</span>
+                        <p class="footer-tagline">Rasa Juara di Setiap Mangkok</p>
+                    </div>
+                    <p class="footer-description">
+                        Premium Indonesian meatball restaurant serving authentic recipes since 2009.
+                        Experience the perfect blend of tradition and taste.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Jl. Raya Sukabumi No. 123, Jakarta Selatan</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <span>hello@basoria.id</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Opening Hours</h5>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Monday - Friday</span>
+                            <span>10:00 - 22:00</span>
+                        </li>
+                        <li>
+                            <span>Saturday - Sunday</span>
+                            <span>09:00 - 23:00</span>
+                        </li>
+                    </ul>
+                    <div class="footer-social mt-4">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/basoria.id" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/basoria.id" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; 2024 BASORIA. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="made-with">Crafted with <i class="bi bi-heart-fill text-accent"></i> in Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

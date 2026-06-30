@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BASORIA Gallery - Photos of our restaurant, food, and memorable moments.">
+    <title>Gallery - BASORIA Premium Indonesian Meatball</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">BASORIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content text-center fade-in">
+                <h1 class="page-title">Gallery</h1>
+                <p class="page-subtitle">Moments captured, memories created</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-controls fade-in">
+                <div class="category-filters justify-content-center" id="galleryFilters">
+                    <button class="category-filter active" data-category="all">All</button>
+                    <button class="category-filter" data-category="food">Food</button>
+                    <button class="category-filter" data-category="restaurant">Restaurant</button>
+                    <button class="category-filter" data-category="moments">Moments</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Food Images -->
+                <div class="gallery-item fade-in" data-category="food">
+                    <img src="https://images.pexels.com/photos/7617590/pexels-photo-7617590.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bakso Original">
+                    <div class="gallery-overlay">
+                        <h5>Bakso Original</h5>
+                        <p>Our signature classic</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="food">
+                    <img src="https://images.pexels.com/photos/7617590/pexels-photo-7617590.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bakso Mercon">
+                    <div class="gallery-overlay">
+                        <h5>Bakso Mercon</h5>
+                        <p>Spicy sensation</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="food">
+                    <img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bakso Keju">
+                    <div class="gallery-overlay">
+                        <h5>Bakso Keju Lumer</h5>
+                        <p>Cheesy goodness inside</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="food">
+                    <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Complete Bakso Bowl">
+                    <div class="gallery-overlay">
+                        <h5>Complete Bakso Set</h5>
+                        <p>With noodles and vegetables</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Restaurant Images -->
+                <div class="gallery-item fade-in" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/1419744/pexels-photo-1419744.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <h5>Main Dining Area</h5>
+                        <p>Comfortable seating for 80 guests</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kitchen">
+                    <div class="gallery-overlay">
+                        <h5>Open Kitchen</h5>
+                        <p>Watch us cook your meal fresh</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="restaurant">
+                    <img src="https://images.pexels.com/photos/2742020/pexels-photo-2742020.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant Exterior">
+                    <div class="gallery-overlay">
+                        <h5>Welcome to BASORIA</h5>
+                        <p>Our flagship branch</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Moments Images -->
+                <div class="gallery-item fade-in" data-category="moments">
+                    <img src="https://images.pexels.com/photos/3654595/pexels-photo-3654595.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Family Dining">
+                    <div class="gallery-overlay">
+                        <h5>Family Time</h5>
+                        <p>Creating memories together</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="moments">
+                    <img src="https://images.pexels.com/photos/4613860/pexels-photo-4613860.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Food Photography">
+                    <div class="gallery-overlay">
+                        <h5>Foodie Paradise</h5>
+                        <p>Instagram-worthy moments</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="moments">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Event">
+                    <div class="gallery-overlay">
+                        <h5>Special Events</h5>
+                        <p>Celebrate with us</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-category="moments">
+                    <img src="https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Smiling Customer">
+                    <div class="gallery-overlay">
+                        <h5>Happy Customers</h5>
+                        <p>Smiles guaranteed</p>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-zoom-in"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram CTA Section -->
+    <section class="instagram-cta-section">
+        <div class="container">
+            <div class="instagram-content text-center fade-in">
+                <div class="instagram-icon">
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <h2 class="instagram-title">Follow Us on Instagram</h2>
+                <p class="instagram-text">
+                    Tag your photos with <span class="hashtag">#BASORIAid</span> for a chance to be featured!
+                </p>
+                <a href="https://instagram.com/basoria.id" target="_blank" class="btn btn-primary-custom">
+                    <i class="bi bi-instagram me-2"></i>@basoria.id
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-0">
+                    <img src="" alt="Gallery Image" class="modal-image" id="galleryModalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <span class="brand-text">BASORIA</span>
+                        <p class="footer-tagline">Rasa Juara di Setiap Mangkok</p>
+                    </div>
+                    <p class="footer-description">
+                        Premium Indonesian meatball restaurant serving authentic recipes since 2009.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Jl. Raya Sukabumi No. 123, Jakarta Selatan</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <span>hello@basoria.id</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Opening Hours</h5>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Monday - Friday</span>
+                            <span>10:00 - 22:00</span>
+                        </li>
+                        <li>
+                            <span>Saturday - Sunday</span>
+                            <span>09:00 - 23:00</span>
+                        </li>
+                    </ul>
+                    <div class="footer-social mt-4">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/basoria.id" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/basoria.id" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; 2024 BASORIA. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="made-with">Crafted with <i class="bi bi-heart-fill text-accent"></i> in Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

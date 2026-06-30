@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact BASORIA - Get in touch with us for reservations, orders, or inquiries.">
+    <title>Contact - BASORIA Premium Indonesian Meatball</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">BASORIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content text-center fade-in">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We'd love to hear from you</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h5 class="contact-info-title">Address</h5>
+                        <p class="contact-info-text">
+                            Jl. Raya Sukabumi No. 123<br>
+                            Cilandak, Jakarta Selatan<br>
+                            DKI Jakarta 12430
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <h5 class="contact-info-title">Opening Hours</h5>
+                        <p class="contact-info-text">
+                            Mon - Fri: 10:00 - 22:00<br>
+                            Sat - Sun: 09:00 - 23:00<br>
+                            Public Holidays: 09:00 - 23:00
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <h5 class="contact-info-title">Get in Touch</h5>
+                        <p class="contact-info-text">
+                            Phone: +62 812-3456-7890<br>
+                            Email: hello@basoria.id<br>
+                            WhatsApp: +62 812-3456-7890
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-main-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 fade-in-left">
+                    <div class="contact-form-wrapper">
+                        <span class="section-label">Send a Message</span>
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="contact-form-intro">
+                            Have questions, suggestions, or want to make a reservation?
+                            Fill out the form below and we'll get back to you within 24 hours.
+                        </p>
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Your Name *</label>
+                                        <input type="text" class="form-control" id="name" name="name" required placeholder="John Doe">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required placeholder="john@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+62 812-xxxx-xxxx">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">Subject *</label>
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="">Select a subject</option>
+                                            <option value="reservation">Reservation</option>
+                                            <option value="order">Order Inquiry</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="partnership">Partnership</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Your Message *</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us what's on your mind..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom btn-submit">
+                                        <span class="btn-text">Send Message</span>
+                                        <span class="btn-loading d-none">
+                                            <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                                            Sending...
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-success d-none" id="formSuccess">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <h4>Thank You!</h4>
+                            <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-right">
+                    <div class="contact-map-wrapper">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.7169440707!2d106.82698071476968!3d-6.29262999543867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sCilandak%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1699999999999"
+                                width="100%"
+                                height="450"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="BASORIA Location">
+                            </iframe>
+                        </div>
+                        <div class="quick-contact-buttons mt-4">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20BASORIA" class="btn btn-whatsapp" target="_blank">
+                                <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+                            </a>
+                            <a href="tel:+6281234567890" class="btn btn-outline-custom ms-2">
+                                <i class="bi bi-telephone me-2"></i>Call Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="branches-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <span class="section-label">Our Locations</span>
+                <h2 class="section-title">Find Us Near You</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="branch-card">
+                        <div class="branch-badge">Main Branch</div>
+                        <h5 class="branch-name">BASORIA Cilandak</h5>
+                        <p class="branch-address">
+                            Jl. Raya Sukabumi No. 123<br>
+                            Jakarta Selatan
+                        </p>
+                        <div class="branch-hours">
+                            <i class="bi bi-clock"></i>
+                            <span>10:00 - 22:00</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="branch-link">
+                            Get Directions <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="branch-card">
+                        <h5 class="branch-name">BASORIA Kemang</h5>
+                        <p class="branch-address">
+                            Jl. Kemang Raya No. 45<br>
+                            Jakarta Selatan
+                        </p>
+                        <div class="branch-hours">
+                            <i class="bi bi-clock"></i>
+                            <span>10:00 - 22:00</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="branch-link">
+                            Get Directions <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="branch-card">
+                        <h5 class="branch-name">BASORIA BSD</h5>
+                        <p class="branch-address">
+                            BSD City, Square No. 78<br>
+                            Tangerang
+                        </p>
+                        <div class="branch-hours">
+                            <i class="bi bi-clock"></i>
+                            <span>09:00 - 22:00</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="branch-link">
+                            Get Directions <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="branch-card">
+                        <h5 class="branch-name">BASORIA Depok</h5>
+                        <p class="branch-address">
+                            Jl. Margonda Raya No. 99<br>
+                            Depok
+                        </p>
+                        <div class="branch-hours">
+                            <i class="bi bi-clock"></i>
+                            <span>10:00 - 22:00</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="branch-link">
+                            Get Directions <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="branch-card">
+                        <h5 class="branch-name">BASORIA Bogor</h5>
+                        <p class="branch-address">
+                            Jl. Pajajaran No. 56<br>
+                            Bogor
+                        </p>
+                        <div class="branch-hours">
+                            <i class="bi bi-clock"></i>
+                            <span>10:00 - 22:00</span>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="branch-link">
+                            Get Directions <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="branch-card coming-soon">
+                        <h5 class="branch-name">BASORIA Bandung</h5>
+                        <p class="branch-address">
+                            Coming Soon<br>
+                            Dago, Bandung
+                        </p>
+                        <span class="coming-soon-badge">Opening 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20BASORIA" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <span class="brand-text">BASORIA</span>
+                        <p class="footer-tagline">Rasa Juara di Setiap Mangkok</p>
+                    </div>
+                    <p class="footer-description">
+                        Premium Indonesian meatball restaurant serving authentic recipes since 2009.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Jl. Raya Sukabumi No. 123, Jakarta Selatan</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <span>hello@basoria.id</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Opening Hours</h5>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Monday - Friday</span>
+                            <span>10:00 - 22:00</span>
+                        </li>
+                        <li>
+                            <span>Saturday - Sunday</span>
+                            <span>09:00 - 23:00</span>
+                        </li>
+                    </ul>
+                    <div class="footer-social mt-4">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/basoria.id" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/basoria.id" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; 2024 BASORIA. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="made-with">Crafted with <i class="bi bi-heart-fill text-accent"></i> in Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
